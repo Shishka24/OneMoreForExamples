@@ -1,11 +1,15 @@
 // import "./App.css";
 import { Accordion } from "./components/Accordion";
+import { OnOff } from "./components/OnOff/onOff";
 import { Rating } from "./components/Rating";
 
 function App() {
   return (
     <div className="App">
-      <PageTitle title={"This is APP Component"} />
+      <OnOff on={true} />
+      {/* <OnOff on={false} /> */}
+      {/* <OnOff on={true} /> */}
+      {/* <PageTitle title={"This is APP Component"} />
       <PageTitle title={"My Friends"} />
       <Rating value={3} />
       <Accordion titleValue={"Menu"} collapsed={false} />
@@ -15,7 +19,7 @@ function App() {
       <Rating value={2} />
       <Rating value={3} />
       <Rating value={4} />
-      <Rating value={5} />
+      <Rating value={5} /> */}
     </div>
   );
 }
