@@ -3,11 +3,12 @@ import { useState } from "react";
 type PropsType = {
   // on: boolean;
   onChange: (on: boolean) => void;
+  defaultOn?: boolean;
 };
 
 export function UncontrolledOnOff(props: PropsType) {
   //   let on = false;
-  let [on, setOn] = useState(false);
+  let [on, setOn] = useState(props.defaultOn ? props.defaultOn : false);
   const OnOffClickHandler = () => {
     if (!on) {
       setOn(true);

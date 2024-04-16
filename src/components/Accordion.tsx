@@ -30,7 +30,7 @@ export const Accordion = ({
 
 function AccordionTitle({ title, onChange }: AccordionTitlePropsType) {
   console.log("AccordionTitle rendering");
-  return <h3 onClick={onChange}>--{title}--</h3>;
+  return <h3 onClick={(e) => onChange()}>--{title}--</h3>;
 }
 function AccordionBody() {
   console.log("AccordionBody rendering");
